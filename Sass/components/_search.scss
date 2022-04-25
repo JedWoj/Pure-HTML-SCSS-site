@@ -1,0 +1,22 @@
+.search {
+    position: relative;
+
+    &__input {
+        padding: 1rem 4rem;
+        outline: none;
+        border: 1px solid $color-input-border;
+        border-radius: 40px;
+
+        &::placeholder {
+            color: $color-placeholder;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+}

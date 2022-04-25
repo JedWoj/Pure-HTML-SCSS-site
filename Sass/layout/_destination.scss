@@ -1,0 +1,66 @@
+.destination {
+    padding: 4rem $padding;
+    background-color: $color-blue-light;
+
+    &__top {
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        
+    }
+
+    &__icon-box {
+
+    }
+
+    &__icon {
+
+    }
+
+    &__info-txt {
+        font-size: 1.6rem;
+        color: $color-gray-lightest;
+        margin-top:-4px;
+        margin-left: 8px;
+    }
+
+    &__text {
+        color: $color-gray-light;
+        font-size: 1.6rem;
+        width: 80%;
+        margin: 5rem auto;
+        padding-right: 20%;
+        line-height: 200%;
+    }
+
+    &__mid {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__slash {
+        color: $color-gray-light;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    &__distance {
+        margin: 0 1rem;
+    }
+
+    &__span {
+       color: $color-gray-lightest;
+       font-weight: 400;
+    }
+}
