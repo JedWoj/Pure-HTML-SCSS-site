@@ -1,0 +1,24 @@
+.city {
+    padding: 10rem $padding;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__img-box {
+        width: 50%;
+    }
+
+    &__img {
+        padding: 0 6rem;
+    }
+
+    &__content {
+        width: 50%;
+    }
+
+    &__text {
+        color: $color-gray-light;
+        font-size: 1.6rem;
+        line-height: 3.5rem;
+    }
+}

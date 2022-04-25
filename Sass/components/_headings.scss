@@ -9,6 +9,13 @@
         letter-spacing: 5px;
     }
 
+    &--2 {
+        color: $color-green-light;
+        font-size: 6rem;
+        letter-spacing: 2px;
+        margin-bottom: 4rem;
+    }
+
     &__span {
         color: $color-span;
     }
