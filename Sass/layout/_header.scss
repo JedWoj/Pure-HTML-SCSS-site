@@ -1,7 +1,43 @@
 .header {
-    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: radial-gradient(circle, rgba(29,188,253,0.3701855742296919) 0%, rgba(29,229,253,0) 300%), url('../../img/headerBG.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 4rem $padding;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 90%;
+        height: 5vh;
+        background: rgba($color-white, 0.8);
+        position: absolute;
+        bottom: 0;
+        left: 7%;
+    }
+
     &__nav {
 
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__text {
+        color: $color-white;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 200%;
+        margin-bottom: 8rem;
     }
 
 }

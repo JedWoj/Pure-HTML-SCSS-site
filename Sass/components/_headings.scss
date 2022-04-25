@@ -1,0 +1,15 @@
+.heading {
+    font-family: $font-2;
+
+    &--1{
+        text-transform: uppercase;
+        color: $color-white;
+        font-size: 8rem;
+        line-height: 1.6;
+        letter-spacing: 5px;
+    }
+
+    &__span {
+        color: $color-span;
+    }
+}

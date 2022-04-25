@@ -11,9 +11,248 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@-webkit-keyframes profilePic {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  45% {
+    top: 0;
+    left: 20vw;
+  }
+  50% {
+    top: -20vh;
+    left: 20vw;
+  }
+  55% {
+    top: -20vh;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes profilePic {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  45% {
+    top: 0;
+    left: 20vw;
+  }
+  50% {
+    top: -20vh;
+    left: 20vw;
+  }
+  55% {
+    top: -20vh;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@-webkit-keyframes shaking {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  25% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  50% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes shaking {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  25% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  50% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+.menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: min-content 1fr min-content;
+      grid-template-columns: -webkit-min-content 1fr -webkit-min-content;
+      grid-template-columns: min-content 1fr min-content;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 2rem;
+}
+
+.menu__logo {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+}
+
+.menu__span {
+  font-weight: 700;
+}
+
+.menu__menu {
+  justify-self: flex-end;
+}
+
+.menu__list {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(5rem, 10rem))[5];
+      grid-template-columns: repeat(5, minmax(5rem, 10rem));
+  grid-gap: 2rem;
+}
+
+.menu__link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 1rem 1rem;
+  border: 3px solid transparent;
+  text-align: center;
+  border-radius: 40px;
+  font-weight: 500;
+  -webkit-transition: border .4s;
+  transition: border .4s;
+}
+
+.menu__link:hover {
+  border: 3px solid white;
+  font-weight: 700;
+}
+
+.menu__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__photo-box {
+  margin-right: 5px;
+}
+
+.menu__photo-box:hover .menu__img {
+  position: relative;
+  -webkit-animation: profilePic 2s;
+          animation: profilePic 2s;
 }
 
 .menu__svg {
-  fill: aqua;
+  fill: #fff;
+  -webkit-animation: shaking .3s infinite;
+          animation: shaking .3s infinite;
+}
+
+.heading {
+  font-family: "Ultra", serif;
+}
+
+.heading--1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 8rem;
+  line-height: 1.6;
+  letter-spacing: 5px;
+}
+
+.heading__span {
+  color: #01a2a6;
+}
+
+.button {
+  text-decoration: none;
+  color: #10273d;
+  padding: 2rem 3rem;
+  font-size: 1.6rem;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.button--yellow {
+  background-color: #ffffa6;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background-image: radial-gradient(circle, rgba(29, 188, 253, 0.370186) 0%, rgba(29, 229, 253, 0) 300%), url("../../img/headerBG.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 4rem 14rem;
+  position: relative;
+}
+
+.header::after {
+  content: '';
+  display: block;
+  width: 90%;
+  height: 5vh;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  left: 7%;
+}
+
+.header__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header__text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 200%;
+  margin-bottom: 8rem;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,13 @@
+.button {
+    text-decoration: none;
+    color: $color-dark;
+    padding: 2rem 3rem;
+    font-size: 1.6rem;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &--yellow {
+        background-color: $color-yellow;
+    }
+}

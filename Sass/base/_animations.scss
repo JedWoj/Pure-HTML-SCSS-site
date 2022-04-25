@@ -1,0 +1,46 @@
+@keyframes profilePic {
+    
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    45% {
+        top: 0;
+        left: 20vw;
+    }
+
+    50% {
+        top: -20vh;
+        left: 20vw;
+    }
+    
+    55% {
+        top: -20vh;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes shaking {
+    
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(8deg);
+    }
+
+    50% {
+        transform: rotate(-8deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
