@@ -1,0 +1,42 @@
+.page {
+    margin-top: 7.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__chars {
+        display: flex;
+        align-items: center;
+    }
+
+    &__nums {
+        width: 125px;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $color-page-nums;
+        letter-spacing: 6px;
+        cursor: pointer;
+    }
+
+    &__active {
+        font-size: 2.4rem;
+        color: $color-span;
+        font-family: $font-2, sans-serif;
+    }
+
+    &__next,
+    &__last {
+        text-decoration: none;  
+        color: $color-page-nums; 
+        font-size: 1.8rem;
+    }
+
+    &__next {
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+
+    &__last {
+
+    }
+}

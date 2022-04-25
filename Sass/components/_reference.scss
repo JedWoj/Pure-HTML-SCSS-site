@@ -1,0 +1,30 @@
+.reference {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    bottom: 2%;
+
+    &--1 {
+        left: 53%;
+    }
+
+    &--2,
+    &--3 {
+        right: 2%;
+    }
+    
+    &__see {
+        font-size: 1.6rem;
+        color: $color-white-darker;
+        font-weight: 700;
+    }
+
+    &__box {
+        transform: translateY(3px);
+    }
+
+    &__arrow {
+        margin-left: 8px;
+    }
+}

@@ -15,6 +15,14 @@
         letter-spacing: 2px;
     }
 
+
+    &--3 {
+        color: $color-span;
+        font-weight: 300;
+        font-size: 3rem;
+        font-family: 'Lato', sans-serif;
+    }
+
     &__span {
         color: $color-span;
     }
