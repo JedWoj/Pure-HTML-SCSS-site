@@ -63,6 +63,11 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 2rem;
+
+        &--2 {
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+        }
     }
 
     &__date {
@@ -83,12 +88,21 @@
         background-color: $color-white;
         border: 1px solid $color-gray-border;
         border-radius: 5px;
-        padding: 2rem 2.5rem;
+        padding: 1.8rem 2.5rem;
         position: relative;
+
+        &--2 {
+            margin-top: 1.5rem;
+            padding: 1rem 2.5rem;
+        }
     }
 
     &__icon-box {
         margin-right: 3rem;
+
+        &--2 {
+            margin-right: 4.8rem;
+        }
     }
 
     &__icon {
@@ -133,5 +147,44 @@
     &__plus {
         font-size: 1.6rem;
         color: $color-yellow;
+    }
+
+    &__atractions {
+        background-color: $color-gold;
+        width: 95%;
+        margin-left: 3%;
+        border-bottom-left-radius: 5px;
+    }
+
+    &__atraction {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: $color-gold-txt;
+        text-align: left;
+        padding: 2rem 2.5rem;
+
+        &:not(:last-child) {
+            &::after {
+                content: "";
+                display: block;
+                height: 1px;
+                width: 100%;
+                background-color: $color-yellow-darkest;
+                transform: translateY(2rem);
+            }
+        }
+    }
+    
+    &__drag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: $color-yellow-darkest;
+        background-color: rgba($color-gold, 0.4);
+        padding: 2.6rem 0;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='5' ry='5' stroke='%230000001F' stroke-width='6' stroke-dasharray='10%2c 20' stroke-dashoffset='32' stroke-linecap='square'/%3e%3c/svg%3e");
+        border-radius: 5px;
     }
 }
