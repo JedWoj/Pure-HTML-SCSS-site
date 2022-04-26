@@ -20,4 +20,29 @@
     &--yellow {
         background-color: $color-yellow;
     }
+
+    &--green {
+        background-color: $color-green-lightest;
+        padding: 2.2rem 2rem;
+    }
+
+    &--mint {
+        background-color: $color-mint;
+        padding: 2.2rem 2.8rem;
+        margin-left: 3rem;
+    }
+
+    &--green,
+    &--mint {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-white;
+        align-items: center;
+    }
+
+    &__icon {
+        transform: translateY(2px);
+        padding-right: 1rem;
+    }
 }
