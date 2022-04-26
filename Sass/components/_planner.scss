@@ -1,0 +1,137 @@
+.planner {
+    width: 55%;
+    border-radius: 5px;
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-white;
+        font-size: 1.8rem;
+        background-color: $color-green-light;
+        padding: 2.8rem 0 2.9rem 0;
+        position: relative;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    &__name {
+        z-index: 1;
+    }
+
+    &__bg-box {
+        position: absolute;
+        top: 4%;
+        right: 0;
+    }
+
+    &__bg {
+        position: absolute;
+
+        &--1 {
+            right: 0;
+        }
+
+        &--2 {
+           right: 37.5rem;
+           top: 3.2rem; 
+        }
+
+        &--3 {
+            right: .5rem;
+        }
+
+        &--4 {
+            right: 11rem;
+            top: 1rem;
+        }
+    }
+
+    &__content {
+        background-color: $color-yellow;
+        padding: 2.6rem 3.1rem 9.2rem 4.2rem;
+    }
+
+    &__day {
+        color: $color-green-light;
+        font-size: 1.6rem;
+        font-weight: 600;
+    } 
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    &__date {
+        color: $color-green-light;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    &__svg {
+        fill: $color-span;
+        margin-left: 1rem;
+    }
+
+    &__tour {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: $color-white;
+        border: 1px solid $color-gray-border;
+        border-radius: 5px;
+        padding: 2rem 2.5rem;
+        position: relative;
+    }
+
+    &__icon-box {
+        margin-right: 3rem;
+    }
+
+    &__icon {
+
+    }
+
+    &__time {
+        color: $color-gray-time;
+        font-size: 1.8rem;
+        font-weight: 300;
+        margin-left: auto;
+    }
+
+    &__add {
+        background-color: $color-yellow-dark;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 34%;
+        padding: 1rem;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        margin-left: 64%;
+    }
+
+    &__txt {
+        color: $color-yellow-darkest;
+        font-size: 1.6rem;
+        font-weight: 600;
+        transform: translateY(-2px);
+        margin-right: 5px;
+    }
+
+    &__plus-box {
+        width: 2.2rem;
+        height: 2.2rem;
+        background-color: $color-yellow-bg;
+        border-radius: 50%;
+        position: relative;
+    }
+
+    &__plus {
+        font-size: 1.6rem;
+        color: $color-yellow;
+    }
+}

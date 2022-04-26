@@ -23,6 +23,13 @@
         font-family: 'Lato', sans-serif;
     }
 
+    &--5 {
+        font-family: 'Lato', sans-serif;
+        font-size: 2.4rem;
+        font-weight: 300;
+        color: $color-gray-heading;
+    }
+
     &__span {
         color: $color-span;
     }

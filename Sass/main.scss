@@ -3,7 +3,6 @@
 @import "base/base";
 @import "base/animations";
 
-
 @import "components/menu";
 @import "components/headings";
 @import "components/button";
@@ -11,8 +10,10 @@
 @import "components/gallery";
 @import "components/reference";
 @import "components/page";
-
+@import "components/planner";
+@import "components/selection";
 
 @import "layout/header";
 @import "layout/city";
 @import "layout/destination";
+@import "layout/ittinery";
