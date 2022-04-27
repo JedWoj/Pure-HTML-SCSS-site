@@ -1,7 +1,7 @@
 .heading {
     font-family: $font-2;
 
-    &--1{
+    &--1 {
         text-transform: uppercase;
         color: $color-white;
         font-size: 8rem;
@@ -30,7 +30,27 @@
         color: $color-gray-heading;
     }
 
+    &--6 {
+        z-index: 1;
+        font-size: 1.8rem;
+        font-family: 'Lato', sans-serif;
+    }
+
     &__span {
         color: $color-span;
+    }
+
+    &--green {
+        color: $color-green-light;
+        padding-top: 2.8rem;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 3px;
+            width: 7rem;
+            background-color: rgba($color-green-light, 0.9);
+            margin: 1.7rem auto 0 auto;
+        }
     }
 }
