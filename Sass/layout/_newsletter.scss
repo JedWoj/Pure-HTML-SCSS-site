@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
 
+    @media only screen and(max-width: $bp-largest) {
+        padding: 5rem 5rem;
+    }
+
     &__header {
 
     }

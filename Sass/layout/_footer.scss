@@ -24,46 +24,90 @@
             bottom: -30%;
             left: -5%;
             width: 110%;
+            @media only screen and(max-width: $bp-laptop) {
+                width: auto;
+                bottom: -5rem;
+                left: -1rem;
+            }
         }
 
         &--2 {
-            left: 4rem;
+            left: 2%;
             top: 18rem;
+
+            @media only screen and(max-width: $bp-laptop) {
+                left: 8rem;
+            }
         }
 
         &--3 {
-            left: 12rem;
+            left: 6%;
             top: 11rem;
+
+            @media only screen and(max-width: $bp-laptop) {
+                left: 15rem;
+                top: 14rem;
+            }
         }
 
         &--4 {
             top: 12rem;
-            left: 19rem;
+            left: 10%;
+
+            @media only screen and(max-width: $bp-laptop) {
+                left: 21rem;
+                top: 15rem;
+            }
         }
 
         &--5 {
-            left: 57rem;
+            left: 30%;
             top: 15rem;
+
+            @media only screen and(max-width: $bp-laptop) {
+                left: 49.5rem;
+                top: 17rem;
+            }
         }
 
         &--6 {
-            left: 82rem;
+            left: 42%;
             top: 18rem;
+
+            @media only screen and(max-width: $bp-laptop) {
+                left: 67rem;
+                top: 19rem;
+            }
         }
 
         &--7 {
-            left: 88rem;
+            left: 46%;
             top: 10rem;
+
+            @media only screen and(max-width: $bp-laptop) {
+                left: 72rem;
+                top: 12rem;
+            }
         }
 
         &--8 {
-            left: 120rem;
+            left: 63%;
             top: 14rem;
+
+            @media only screen and(max-width: $bp-laptop) {
+                left: 97.5rem;
+                top: 15.5rem;
+            }
         }
 
         &--9 {
-            left: 164rem;
+            left: 86%;
             top: 7.5rem;
+
+            @media only screen and(max-width: $bp-laptop) {
+                left: 131rem;
+                top: 10.5rem;
+            }
         }
     }
 

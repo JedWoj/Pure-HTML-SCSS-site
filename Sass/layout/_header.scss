@@ -30,6 +30,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        width: 80%;
     }
 
     &__text {
@@ -38,5 +39,13 @@
         font-size: 1.8rem;
         line-height: 200%;
         margin-bottom: 8rem;
+    }
+
+    &__higher {
+        display: block;
+    }
+
+    &__lower {
+
     }
 }
