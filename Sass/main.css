@@ -130,11 +130,13 @@ body {
 
 .menu__list {
   list-style: none;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(5rem, 10rem))[5];
-      grid-template-columns: repeat(5, minmax(5rem, 10rem));
-  grid-gap: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__list :not(:last-child) {
+  margin-right: 5rem;
 }
 
 .menu__link {
@@ -1027,6 +1029,12 @@ body {
   background-color: #f2fefe;
 }
 
+@media only screen and (max-width: 87.5em) {
+  .destination {
+    padding: 6rem 5rem;
+  }
+}
+
 .destination__top {
   margin: 0 auto;
   width: 80%;
@@ -1039,6 +1047,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media only screen and (max-width: 87.5em) {
+  .destination__top {
+    width: 95%;
+  }
 }
 
 .destination__info {
@@ -1067,6 +1081,12 @@ body {
   line-height: 200%;
 }
 
+@media only screen and (max-width: 87.5em) {
+  .destination__text {
+    width: 95%;
+  }
+}
+
 .destination__mid {
   width: 80%;
   margin: 0 auto;
@@ -1076,6 +1096,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media only screen and (max-width: 87.5em) {
+  .destination__mid {
+    width: 95%;
+  }
 }
 
 .destination__slash {
@@ -1097,6 +1123,12 @@ body {
 .ittinery {
   padding: 7rem 14rem 10rem 14rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 87.5em) {
+  .ittinery {
+    padding: 6rem 5rem 9rem 5rem;
+  }
 }
 
 .ittinery__text {

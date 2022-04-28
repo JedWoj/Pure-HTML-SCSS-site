@@ -20,9 +20,11 @@
 
     &__list {
         list-style: none;
-        display: grid;
-        grid-template-columns: repeat(5, minmax(5rem, 10rem));
-        grid-gap: 2rem;
+        display: flex;
+
+        :not(:last-child) {
+            margin-right: 5rem;
+        }
     }
 
     &__item {
