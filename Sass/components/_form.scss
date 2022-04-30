@@ -22,10 +22,16 @@
 
         &--company {
 
+            @media only screen and(max-width: $bp-small) {
+                grid-column: 1 / span 2;
+            }
         }
 
         &--subject {
 
+            @media only screen and(max-width: $bp-small) {
+                grid-column: 1 / span 2;
+            }
         }
 
         &--text {

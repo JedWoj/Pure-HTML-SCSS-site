@@ -6,6 +6,10 @@
         padding: 6rem 5rem 9rem 5rem;
     }
 
+    @media only screen and(max-width: $bp-small) {
+        padding: 6rem 3rem 8rem 3rem;
+    }
+
     &__text {
         color: $color-gray-light;
         font-size: 1.6rem;
