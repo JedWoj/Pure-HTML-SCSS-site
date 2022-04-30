@@ -11,10 +11,20 @@
         font-size: 1.6rem;
         width: 60%;
         margin: 6rem auto 14rem auto; 
+
+        @media only screen and(max-width: $bp-large) {
+            margin: 5rem auto;
+            width: 80%;
+        }
     }
 
     &__content {
         display: flex;
+
+        @media only screen and(max-width: $bp-large) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
     }
 
     &__btns {
@@ -22,5 +32,9 @@
         margin-top: 2rem;
         display: flex;
         justify-content: flex-end;
+
+        @media only screen and(max-width: $bp-large) {
+            justify-content: center;
+        }
     }
 }

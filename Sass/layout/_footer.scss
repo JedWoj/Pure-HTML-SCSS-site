@@ -6,6 +6,10 @@
     position: relative;
     height: 34rem;
     overflow: hidden;
+
+    @media only screen and(max-width: $bp-huge) {
+        padding: 1.6rem 2rem;
+    }
     
     
 

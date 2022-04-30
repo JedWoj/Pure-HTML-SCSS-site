@@ -3,11 +3,21 @@
     grid-template-columns: min-content 1fr min-content;
     align-items: center;
     grid-gap: 2rem;
+    
 
     &__logo {
         color: $color-white;
         font-family: $font-3;
         font-size: 2.5rem;
+    }
+
+    &__box {
+        display: flex;
+        margin-left: auto;
+
+        @media only screen and(max-width: $bp-medium) {
+            margin-left: 0;
+        }
     }
 
     &__span {
@@ -24,6 +34,10 @@
 
         :not(:last-child) {
             margin-right: 5rem;
+
+            @media only screen and(max-width: $bp-large) {
+                margin-right: 1rem;
+            }
         }
     }
 
@@ -52,6 +66,7 @@
     &__user {
         display: flex;
         align-items: center;
+        margin-left: 5rem;
     }
 
     &__photo-box {
