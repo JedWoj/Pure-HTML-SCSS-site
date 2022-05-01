@@ -44,3 +44,56 @@
         transform: rotate(0);
     }
 }
+
+@keyframes cloud {
+    
+    0% {
+        left: -30%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes sun {
+    
+    0% {
+        left: -30%;
+    }
+
+    100% {
+        left: 105%;
+    }
+}
+
+@keyframes sky {
+    
+    0% {
+        background-color: $color-dark-footer;
+    }
+
+    5% {
+        background-color:$color-dark-footer;
+    }
+
+    25% {
+        background-color: #729dad;
+    }
+
+    60% {
+        background-color: #30c7ff;
+    }
+
+    75% {
+        background-color:#e6a139;
+    }
+
+    90% {
+        background-color: #e03314;
+    }
+
+    97% {
+        background-color: $color-dark-footer;
+    }
+}

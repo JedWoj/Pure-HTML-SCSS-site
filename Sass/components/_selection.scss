@@ -52,6 +52,11 @@
         border: 1px solid $color-input-border;
         border-radius: 5px;
         padding: .7rem 2.2rem .7rem 2rem;
+        transition: all .3s;
+
+        &:hover {
+            transform: translateX(2rem);
+        }
     }
 
     &__info {

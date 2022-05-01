@@ -6,12 +6,13 @@
     position: relative;
     height: 34rem;
     overflow: hidden;
+    animation: sky 20s infinite linear;
 
     @media only screen and(max-width: $bp-huge) {
         padding: 1.6rem 2rem;
     }
-    
-    
+
+
 
     &__bg-box {
         position: absolute;
@@ -28,6 +29,7 @@
             bottom: -30%;
             left: -5%;
             width: 110%;
+
             @media only screen and(max-width: $bp-laptop) {
                 width: auto;
                 bottom: -5rem;
@@ -38,79 +40,95 @@
         &--2 {
             left: 2%;
             top: 18rem;
+            display: none;
 
             @media only screen and(max-width: $bp-laptop) {
                 left: 8rem;
+                display: block;
             }
         }
 
         &--3 {
             left: 6%;
             top: 11rem;
+            display: none;
 
             @media only screen and(max-width: $bp-laptop) {
                 left: 15rem;
                 top: 14rem;
+                display: block;
             }
         }
 
         &--4 {
             top: 12rem;
             left: 10%;
+            display: none;
 
             @media only screen and(max-width: $bp-laptop) {
                 left: 21rem;
                 top: 15rem;
+                display: block;
             }
         }
 
         &--5 {
             left: 30%;
             top: 15rem;
+            display: none;
 
             @media only screen and(max-width: $bp-laptop) {
                 left: 49.5rem;
                 top: 17rem;
+                display: block;
             }
         }
 
         &--6 {
             left: 42%;
             top: 18rem;
+            display: none;
 
             @media only screen and(max-width: $bp-laptop) {
                 left: 67rem;
                 top: 19rem;
+                display: block;
             }
         }
 
         &--7 {
             left: 46%;
             top: 10rem;
+            display: none;
 
             @media only screen and(max-width: $bp-laptop) {
                 left: 72rem;
                 top: 12rem;
+                display: block;
             }
         }
 
         &--8 {
             left: 63%;
             top: 14rem;
+            display: none;
 
             @media only screen and(max-width: $bp-laptop) {
                 left: 97.5rem;
                 top: 15.5rem;
+                display: block;
             }
         }
 
         &--9 {
             left: 86%;
             top: 7.5rem;
+            display: none;
 
             @media only screen and(max-width: $bp-laptop) {
                 left: 131rem;
                 top: 10.5rem;
+                display: block;
             }
         }
     }
@@ -142,6 +160,87 @@
 
         &:not(:last-child) {
             margin-right: 1rem;
+        }
+    }
+
+    &__cloud-box {
+        position: absolute;
+        top: 30%;
+        left: -30%;
+        animation: cloud 15s linear infinite;
+        z-index: 2;
+    }
+
+    &__cloud {
+        background-color: rgba(255, 255, 255, 1);
+        width: 15rem;
+        height: 5rem;
+        border-radius: 7.5rem;
+        box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+
+        @media only screen and(max-width: $bp-large) {
+            width: 10rem;
+            height: 3.5rem;
+        }
+
+        &::after {
+            content: '';
+            background-color: rgba(255, 255, 255, 1);
+            position: absolute;
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            top: -2.5rem;
+            left: 2.5rem;
+
+            @media only screen and(max-width: $bp-large) {
+                width: 3.5rem;
+                height: 3.5rem;
+                top: -1.75rem;
+                left: 1.75rem;
+            }
+        }
+
+        &::before {
+            content: '';
+            background-color: rgba(255, 255, 255, 1);
+            position: absolute;
+            width: 8.5rem;
+            height: 8.5rem;
+            border-radius: 50%;
+            top: -4.5rem;
+            right: 2rem;
+
+            @media only screen and(max-width: $bp-large) {
+                width: 6rem;
+                height: 6rem;
+                top: -3rem;
+                right: 1.3rem;
+            }
+        }
+    }
+
+    &__sun {
+        position: absolute;
+        border-radius: 50%;
+        height: 10rem;
+        width: 10rem;
+        background-color: orange;
+        box-shadow: 0 0 5px orange,
+            0 0 3rem orange,
+            0 0 10rem yellow,
+            inset 0 0 4rem yellow;
+        top: 10%;
+        left: -30%;
+        animation: sun 20s linear infinite;
+
+        @media only screen and(max-width: $bp-large) {
+            width: 6.6rem;
+            height: 6.6rem;
+            box-shadow: 0 0 3px orange,
+            0 0 2rem orange,
+            0 0 6.6rem yellow,
+            inset 0 0 3rem yellow;
         }
     }
 }

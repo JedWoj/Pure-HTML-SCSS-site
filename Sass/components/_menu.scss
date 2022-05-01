@@ -9,6 +9,11 @@
         color: $color-white;
         font-family: $font-3;
         font-size: 2.5rem;
+        transition: all .2s;
+
+        &:hover {
+            letter-spacing: 3px;
+        }
     }
 
     &__box {
@@ -64,7 +69,6 @@
 
         &:hover {
             border: 3px solid white;
-            font-weight: 700;
         }
 
         @media only screen and(max-width: $bp-small) {
