@@ -28,6 +28,10 @@
         @media only screen and(max-width: $bp-huge) {
             font-size: 5rem;
         }
+
+        @media only screen and(max-width: $bp-small) {
+            font-size: 3.8rem;
+        }
     }
 
 
@@ -60,6 +64,11 @@
         font-size: 2.4rem;
         font-weight: 300;
         color: $color-gray-heading;
+
+        @media only screen and(max-width: $bp-tiny) {
+            font-size: 1.8rem;
+        }
+        
     }
 
     &--6 {

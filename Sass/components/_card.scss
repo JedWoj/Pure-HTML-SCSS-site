@@ -1,0 +1,80 @@
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+
+    &__side {
+        transition: all 1s;
+        backface-visibility: hidden;
+
+        &--front {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('../../img/photo3.png');
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &--back {
+            background-image: linear-gradient(60deg, rgba(103,228,170,0.8995973389355743) 15%, rgba(113,242,197,0.8995973389355743) 51%, rgba(113,242,219,0.8995973389355743) 72%);
+            height: 100%;
+            transform: rotateY(-180deg) translateY(-100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__price-box {
+        color: $color-white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    &__price-only {
+        font-size: 1.8rem;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
+    }
+
+    &__btn {
+        background-color: $color-white;
+        padding: 1.5rem 2rem;
+        border-radius: 40px;
+        display: block;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: $color-span;
+    }
+
+    &__img-box {
+
+    }
+
+    &__img {
+
+    }
+
+    &__cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0deg) translateY(-100%);
+    }
+}

@@ -5,11 +5,15 @@
     justify-content: space-between;
 
     @media only screen and(max-width: $bp-largest) {
-        padding: 5rem 5rem;
+        padding: 5rem;
     }
 
     @media only screen and(max-width: $bp-large) {
         flex-direction: column;
+    }
+
+    @media only screen and(max-width: $bp-small) {
+        padding: 4rem 3rem;
     }
 
     &__header {
@@ -53,6 +57,11 @@
 
         @media only screen and(max-width: $bp-large) {
             width: 50vw;
+        }
+
+        @media only screen and(max-width: $bp-small) {
+            width: 65vw;
+            padding: 2rem 1rem;
         }
     }
 

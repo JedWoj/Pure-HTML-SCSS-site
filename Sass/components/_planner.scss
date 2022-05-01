@@ -93,6 +93,11 @@
         padding: 1.8rem 2.5rem;
         position: relative;
 
+        @media only screen and(max-width: $bp-tiny) {
+            padding: 2rem 1rem;
+        }
+        
+
         &--2 {
             margin-top: 1.5rem;
             padding: 1rem 2.5rem;
@@ -100,6 +105,11 @@
             @media only screen and(max-width: $bp-small) {
                 padding: 1.8rem 2.5rem;
             }
+
+            @media only screen and(max-width: $bp-tiny) {
+                padding: 2rem 1rem;
+            }
+            
         }
     }
 
@@ -146,6 +156,12 @@
             width: 70%;
             margin-left: 28%;
         }
+
+        @media only screen and(max-width: $bp-tiny) {
+            padding: 1rem 0.6rem;
+            width: 75%;
+            margin-left: 23%;
+        }     
     }
 
     &__txt {
