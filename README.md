@@ -1,5 +1,10 @@
-Instalation: 
+1.Instalacja: 
 
-To check this project you have to: 
--run in your terminal git clone https://github.com/JedWoj/Pure-HTML-SCSS-site.git
--then you can click live server extension to check it in browser
+Aby odpalić ten projekt należy: 
+-w terminalu użyć komendy git clone https://github.com/JedWoj/Pure-HTML-SCSS-site.git
+-następnie trzeba użyć roszerzenia live server które znajduje się w prawym dolnym rogu VSC
+
+2.Technologie - HTML i SCSS
+
+3.Czego się nauczyłem:
+Projekt ten pozwolił mi poczuć się pewnie w tworzeniu stron według gotowych projektów, ponadto dzięki niemu przećwiczyłem tworzenie responsywnych stron oraz zagadnienia z kursu pokroju flexboxa oraz SCSS.  
