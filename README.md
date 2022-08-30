@@ -1,8 +1,4 @@
-1.Instalacja:   
-Aby odpalić ten projekt należy: 
--w terminalu użyć komendy git clone https://github.com/JedWoj/Pure-HTML-SCSS-site.git  
--po użyciu git clone należy w VSC otworzyć folder z projektem    
--następnie trzeba użyć roszerzenia live server które znajduje się w prawym dolnym rogu VSC  
+1.Wersja live: https://pure-html-scss-site-birntyob4-jedwoj.vercel.app/
 
 2.Technologie - HTML i SCSS
 
